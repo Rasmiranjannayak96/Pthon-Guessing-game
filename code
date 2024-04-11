@@ -1,0 +1,15 @@
+import random
+Jackpot= random.randint(1,100)
+Guess= int(input('Guess a number plz'))
+Attempt=1
+while Guess != Jackpot:
+    if Guess<Jackpot:
+        print('Wrong answer! Guess something Higher')
+    else:
+        print('Wrong answer! Guess something Lower')
+    Guess= int(input('Guess a number plz'))
+    Attempt +=1
+else:
+    print('correct answer')
+    print('you took ' + str(Attempt) + ' attempts to guess Correct answer')
+  
